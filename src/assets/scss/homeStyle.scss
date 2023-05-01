@@ -1,0 +1,22 @@
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    .left-side,
+    .right-side {
+        display: flex;
+        justify-content: center;
+        flex: 2;
+    }
+    
+}
+@media (max-width:640px) {
+    .container {
+        flex-direction: column;
+        .left-side,
+        .right-side {
+            justify-content: center;
+            width: 100%;
+        }
+    }
+}
