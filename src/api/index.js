@@ -4,9 +4,9 @@ const _client = axios.create({
 });
 
 
-export const listGifs = ((client) => {
+export const images = ((client) => {
   const listAllGifs = async () => {
-    const { data } = await client.get(``);
+    const { data } = await client.get(`https://api.thecatapi.com/v1/images/search?limit=10`);
     return data;
   };
 
