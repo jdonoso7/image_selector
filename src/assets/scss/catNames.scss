@@ -1,0 +1,15 @@
+.item-names {
+  width: 100%;
+  ul {
+    li {
+      list-style: none;
+      cursor: pointer;
+      margin: 10px 0px 10px 0px;
+      padding: 2px;
+      width: 100%;
+    }
+    li:hover {
+      background-color: beige;
+    }
+  }
+}
